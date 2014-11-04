@@ -134,7 +134,7 @@ Function AddTrustedSubdomain
 
 
 # Add trusted sites to stop the annoying crap when you're trying to install chrome
-# Doesn't seem to work on WinServer2012, probably need to try a different HKEY location in $UserRegPath 
+#TODO: Doesn't seem to work on WinServer2012, probably need to try a different HKEY location in $UserRegPath 
 AddTrustedSites ("google.com","bing.com") -HTTP $true
 AddTrustedSites ("google.com","bing.com")
 

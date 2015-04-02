@@ -10,3 +10,5 @@ gc -tail 10 -wait somefile.log
 #So in a separate window, run this over and over again:
 gc -tail 1 somefile.log
 #AA TODO: Write a simple script that does that in the background 
+#EG: 
+$j = start-job -scriptblock {while($true) { gc -head 1 C:\cfn\log\cfn-init.log; sleep 1 }} # force a file handle to open and close every second
